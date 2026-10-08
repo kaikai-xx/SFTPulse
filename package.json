@@ -5,10 +5,10 @@
   "main": "./out/main/index.js",
   "author": "SFTPulse",
   "license": "MIT",
-  "homepage": "https://github.com/your-name/SFTPulse",
+  "homepage": "https://github.com/kaikai-xx/SFTPulse",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-name/SFTPulse.git"
+    "url": "https://github.com/kaikai-xx/SFTPulse.git"
   },
   "scripts": {
     "dev": "electron-vite dev",

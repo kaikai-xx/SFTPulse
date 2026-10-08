@@ -1,0 +1,26 @@
+appId: top.wjkaicx.sftpulse
+productName: SFTPulse
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.gitignore,README.md,LICENSE,CONTRIBUTING.md}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  - '!{electron-builder.yml,electron-builder.yaml}'
+asarUnpack:
+  - resources/**
+win:
+  target:
+    - nsis
+  artifactName: ${productName}-${version}-setup.${ext}
+  # icon: build/icon.ico   # 放好 256x256 ico 后取消注释
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  deleteAppDataOnUninstall: false
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+npmRebuild: false

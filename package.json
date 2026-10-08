@@ -1,0 +1,44 @@
+{
+  "name": "sftpulse",
+  "version": "0.1.0",
+  "description": "SFTPulse — 通用 SSH/SFTP 桌面客户端：可视化上传文件、浏览远程目录、执行远程命令。",
+  "main": "./out/main/index.js",
+  "author": "SFTPulse",
+  "license": "MIT",
+  "homepage": "https://github.com/your-name/SFTPulse",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-name/SFTPulse.git"
+  },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json",
+    "typecheck:web": "vue-tsc --noEmit -p tsconfig.web.json",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web",
+    "dist": "npm run build && electron-builder --win",
+    "dist:dir": "npm run build && electron-builder --dir"
+  },
+  "dependencies": {
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/xterm": "^6.0.0",
+    "mysql2": "^3.24.5",
+    "ssh2": "^1.16.0"
+  },
+  "devDependencies": {
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0",
+    "@element-plus/icons-vue": "^2.3.1",
+    "@types/node": "^22.9.0",
+    "@types/ssh2": "^1.15.1",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "element-plus": "^2.8.8",
+    "typescript": "^5.6.3",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.1.10"
+  }
+}

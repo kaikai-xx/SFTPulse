@@ -1,0 +1,24 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+out/
+release/
+*.tsbuildinfo
+
+# 日志
+*.log
+
+# 编辑器 / 系统
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# 本地凭据/配置（保险起见，任何 .local 配置与连接数据不入库）
+*.local
+connections.json
+databases.json
+tasks.json
+groups.json

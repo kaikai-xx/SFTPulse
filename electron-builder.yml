@@ -1,5 +1,8 @@
 appId: top.wjkaicx.sftpulse
 productName: SFTPulse
+publish:
+  provider: github
+  # owner/repo 从 package.json 的 repository 字段自动推导
 directories:
   buildResources: build
 files:
